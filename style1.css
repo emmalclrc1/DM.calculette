@@ -1,0 +1,41 @@
+.grid-main {
+    display: grid;
+   
+    grid-template-areas:
+      "numbers transports";
+  
+  
+    grid-template-columns: 300px 100px;
+    grid-template-rows: 400px;
+    gap: 5px;
+  }
+
+  .grid-numbers {
+    grid-area: numbers;
+  }
+  
+  .grid-numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+  }
+
+  .grid-symboles {
+    grid-area: symboles
+  }
+  
+  .grid-symboles {
+    display: grid;
+  }
+  
+  .grid-main div {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 3rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(0, 0, 0, .75);
+  }
+  
